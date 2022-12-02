@@ -10,6 +10,4 @@ RUN dpkg -i pandoc-2.18-1-amd64.deb
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -yq texlive-xetex
 
 RUN apt-get install -y git
-RUN git config --local user.email "actions@github.com" 
-RUN git config --local user.name "GitHub Actions"
 RUN git config --global pull.ff only
