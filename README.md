@@ -1,8 +1,10 @@
 # pandocker
 
-Docker image for pandoc 2.18 with xelatex and citeproc plugins
+Docker image for pandoc 2.18 with xelatex and citeproc plugins.  Renders markdown files to pdf and docx, using a docx template file for styles.
 
 # Usage
+
+Create a file `.github/workflows/render-pandoc.yml`:
 
 ```yml
 name: pandoc
