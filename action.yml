@@ -1,0 +1,6 @@
+# action.yml
+name: "Pandoc docker image"
+description: "Install packages ready for pandoc with xelatex"
+runs:
+  using: "docker"
+  image: "Dockerfile"
