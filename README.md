@@ -1,6 +1,6 @@
 # pandocker
 
-Docker image for pandoc 2.18 with xelatex and citeproc plugins.  Renders markdown files to pdf and docx, using a docx template file for styles.
+Docker image for pandoc 3.1.2 with xelatex and citeproc plugins.  Renders markdown files to pdf and docx, using a docx template file for styles.
 
 # Usage
 
@@ -43,7 +43,7 @@ jobs:
 
       - name: Deploy
         run: |
-          git config --global --add safe.directory "/__w/*"
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
           git ls-files
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
