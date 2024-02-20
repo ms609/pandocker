@@ -22,14 +22,14 @@ jobs:
   pandoc-render:
     name: Render documents
 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     container: ms609/pandoc
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         
       - name: Render PDF
         run: |
