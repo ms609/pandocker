@@ -1,6 +1,7 @@
 # pandocker
 
-Docker image for pandoc 3.1.2 with xelatex and citeproc plugins.  Renders markdown files to pdf and docx, using a docx template file for styles.
+Docker image for pandoc 3.1.12.1 with xelatex and citeproc plugins.
+Renders markdown files to pdf and docx, using a docx template file for styles.
 
 # Usage
 
