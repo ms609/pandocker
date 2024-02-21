@@ -10,10 +10,9 @@ RUN dpkg -i pandoc-3.1.12.1-1-amd64.deb
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -yq texlive-latex-extra texlive-xetex
 
 RUN apt-get install -yq fontconfig fontconfig-config
-RUN wget https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKSC-hinted.zip
-RUN unzip NotoSansCJKSC-hinted.zip
+RUN wget https://github.com/google/fonts/raw/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf
 RUN mkdir -p /usr/local/share/fonts/NotoSansCJKSC
-RUN cp *.otf /usr/local/share/fonts/NotoSansCJKSC
+RUN cp *.ttf /usr/local/share/fonts/NotoSansCJKSC
 RUN fc-cache -f -v
 RUN texhash
 
