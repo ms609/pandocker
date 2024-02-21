@@ -9,7 +9,6 @@ RUN dpkg -i pandoc-3.1.12.1-1-amd64.deb
 
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -yq texlive-latex-extra texlive-xetex
 
-RUN apt-get install -yq fontconfig fontconfig-config
 RUN wget https://github.com/google/fonts/raw/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf
 RUN apt-get install -yq ttf-mscorefonts-installer
 RUBN fc-add NotoSansSC%5Bwght%5D.ttf
