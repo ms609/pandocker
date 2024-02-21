@@ -11,7 +11,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -yq texlive-latex-e
 
 RUN wget https://github.com/google/fonts/raw/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf
 
-RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
 RUN apt-get install -yq ttf-mscorefonts-installer
 RUN fc-add NotoSansSC%5Bwght%5D.ttf
 
