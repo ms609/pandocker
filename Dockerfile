@@ -11,7 +11,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -yq texlive-latex-e
 
 RUN wget https://github.com/google/fonts/raw/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf
 RUN apt-get install -yq ttf-mscorefonts-installer
-RUBN fc-add NotoSansSC%5Bwght%5D.ttf
+RUN fc-add NotoSansSC%5Bwght%5D.ttf
 RUN mkdir -p /usr/local/share/fonts/NotoSansCJKSC
 RUN cp *.ttf /usr/local/share/fonts/NotoSansCJKSC
 RUN fc-cache -f -v
